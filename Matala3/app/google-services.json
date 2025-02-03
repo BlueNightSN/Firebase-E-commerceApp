@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1039963772314",
+    "project_id": "matala3-9676b",
+    "storage_bucket": "matala3-9676b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039963772314:android:6806de9f726fd881f25623",
+        "android_client_info": {
+          "package_name": "com.example.matala3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2XGp3upg11P0PY1jK_P6YEvMzTClFy7Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
