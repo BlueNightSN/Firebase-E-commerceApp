@@ -38,3 +38,17 @@ Run the generated APK from Android Studio or install it using ADB.
 - Add dedicated cart/product item layouts with images.
 - Add validation and structured error handling.
 - Add UI/integration test coverage.
+
+
+## Secrets Handling
+- `google-services.json` is excluded from version control.
+- Provide Firebase config via one of:
+  - local `app/google-services.json` (from `google-services.template.json`), or
+  - `GOOGLE_SERVICES_JSON_PATH` environment variable, or
+  - `GOOGLE_SERVICES_JSON_PATH` in `local.properties`.
+
+Example:
+```bash
+export GOOGLE_SERVICES_JSON_PATH=/absolute/path/to/google-services.json
+bash ./gradlew :app:assembleDebug
+```

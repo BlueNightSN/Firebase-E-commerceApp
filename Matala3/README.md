@@ -53,6 +53,21 @@ From `Matala3/`:
 bash ./gradlew assembleDebug
 ```
 
+
+### Firebase secret configuration (required for full runtime functionality)
+`google-services.json` is intentionally **not tracked** in git.
+
+You can provide Firebase credentials in one of these ways:
+1. Copy `app/google-services.template.json` to `app/google-services.json` and fill your real Firebase values locally.
+2. Or set `GOOGLE_SERVICES_JSON_PATH` (environment variable) to a local `google-services.json` path before building.
+3. Or set `GOOGLE_SERVICES_JSON_PATH=/absolute/path/to/google-services.json` in `local.properties`.
+
+Example:
+```bash
+export GOOGLE_SERVICES_JSON_PATH=/Users/you/secrets/google-services.json
+bash ./gradlew assembleDebug
+```
+
 ## Example Usage
 1. Launch app (starts at login screen).
 2. Tap **Register** and create an account.
